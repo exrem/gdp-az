@@ -1,6 +1,6 @@
 @import '@wikimedia/codex/dist/codex.style.css';
-@import url( ./node_modules/@wikimedia/codex-design-tokens/theme-wikimedia-ui-root.css );
-@import url( ./node_modules/@wikimedia/codex-design-tokens/theme-wikimedia-ui-mode-dark.css ) only screen and ( prefers-color-scheme: dark );
+@import '@wikimedia/codex-design-tokens/theme-wikimedia-ui-root.css';
+@import '@wikimedia/codex-design-tokens/theme-wikimedia-ui-mode-dark.css' only screen and (prefers-color-scheme: dark);
 
 @import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap');
 
