@@ -17,7 +17,7 @@ ChartJS.register(
   CategoryScale,
   LinearScale,
   PointElement,
-  LineElement
+  LineElement,
 )
 
 const tabs = [
@@ -253,6 +253,7 @@ const tabs = [
         <Line
           :data="charts[i - 1]"
           :options="{
+            aspectRatio: window.innerWidth > 1280 ? 2 : 1,
             plugins: {
               legend: {
                 labels: {
@@ -305,8 +306,8 @@ const tabs = [
 </template>
 
 <style scoped lang="less">
-@import ( reference ) '@wikimedia/codex-design-tokens/theme-wikimedia-ui.less';
-@import ( reference ) '@wikimedia/codex/mixins/link.less';
+@import (reference) '@wikimedia/codex-design-tokens/theme-wikimedia-ui.less';
+@import (reference) '@wikimedia/codex/mixins/link.less';
 
 a {
   .cdx-mixin-link();
